@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./image/Calculator_5122x.webp" type="image/ico">
+    <title>Calculator Using Javascript</title>
+</head>
+<body>
+    <div id="calculator" class="calculator">
+        <form action="#" name="calculadora" id="calculadora">
+            <p id="screen" class="screen">0</p>
+            <p>
+                <input type="button" value="Retr" class="largo" onclick="retro()">
+                <input type="button" value="Ce" class="largo" onclick="deleteParcial()">
+                <input type="button" value="C" class="largo" onclick="deleteTotal()">
+            </p>
+
+            <p >
+                <input class="btn" type="button" value="7" onclick="number('7')">
+                <input class="btn" type="button" value="8" onclick="number('8')">
+                <input class="btn" type="button" value="9" onclick="number('9')">
+                <input class="btn" type="button" value="/" onclick="operation('/')">
+                <input class="btn" type="button" value="√" onclick="sqareRoot()">
+            </p>
+
+            <p>
+                <input class="btn" type="button" value="4" onclick="number('4')">
+                <input class="btn" type="button" value="5" onclick="number('5')">
+                <input class="btn" type="button" value="6" onclick="number('6')">
+                <input class="btn" type="button" value="*" onclick="operation('*')">
+                <input class="btn" type="button" value="%" onclick="porcent()">
+            </p>
+
+            <p>
+                <input class="btn" type="button" value="1" onclick="number('1')">
+                <input class="btn" type="button" value="2" onclick="number('2')">
+                <input class="btn" type="button" value="3" onclick="number('3')">
+                <input class="btn" type="button" value="-" onclick="operation('-')">
+                <input class="btn" type="button" value="1/x" onclick="invert()">
+            </p>
+
+            <p>
+                <input class="largo" type="button" value="." onclick="number('.')">
+                <input class="largo" type="button" value="0" onclick="number('0')">
+                <input class="largo" type="button" value="+" onclick="operation('+')">
+            </p>
+            
+            <p>
+                <input class="equal" type="button" value="=" onclick="igualar()">
+            </p>
+        </form>
+
+        <footer><p class="foot">Created by Mark Lacerenze</p></footer>
+    </div>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
